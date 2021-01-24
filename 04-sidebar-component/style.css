@@ -1,0 +1,132 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   background: #4158D0 linear-gradient(43deg, #a1d0b6 0%, #94c2e1 100%) no-repeat;
+   height: 100vh;
+   overflow-x: hidden;
+}
+
+.toggle {
+   position: absolute;
+   right: 25px;
+   top: 30px;
+   z-index: 3;
+   width: 50px;
+   height: 50px;
+   border: none;
+   border-radius: 50px;
+   background: #fff;
+   box-shadow: 0 7px 10px -10px #444;
+   transition: all 0.5s ease-out;
+   outline: none;
+   cursor: pointer;
+}
+
+.active-toggle {
+   right: 25px;
+   left: unset;
+}
+
+.toggle i {
+   font-size: 1.5rem;
+   color: #212b41;
+}
+
+.container {
+   width: 0;
+   overflow: hidden;
+   transition: all 0.5s ease-out;
+}
+
+.sidebar {
+   position: relative;
+   background:#2e3951;
+   height: 100vh;
+   min-width: 300px;
+   width: 100%;
+   padding: 2rem 1.5rem;
+}
+
+.show {
+   width: 100%;
+}
+
+.sidebar-header {
+   display: flex;
+   align-items: center;
+   color: #18d4a3;
+   margin-bottom: 2rem;
+}
+
+.sidebar-header i {
+   font-size: 3rem;
+}
+
+.links {
+   list-style: none;
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid #5e6c75;
+}
+
+.link {
+   text-decoration: none;
+   display: block;
+   padding: 1rem;
+   color: #fff;
+   text-transform: capitalize;
+   letter-spacing: 2px;
+   border-radius: 5px;
+   transition: all 0.5s ease-out;
+}
+
+.link:hover {
+   background: #212b41;
+   color: #18d4a3;
+}
+
+.active {
+   background: #212b41;
+   color: #18d4a3;
+}
+
+.social-icons {
+   display: flex;
+   justify-content: space-evenly;
+   list-style: none;
+   width: 100%;
+   font-size: 1.5rem;
+}
+
+.social-icons a {
+   color: #fff;
+   transition: all 0.5s ease-out;
+}
+
+.social-icons a:hover {
+   color: #18d4a3;
+}
+
+@media screen and (min-width: 768px) {
+   .toggle {
+      left: 25px;
+   }
+
+   .active-toggle {
+      left: 275px;
+      right: unset;
+   }
+
+   .sidebar {
+      width: 300px;
+   }
+
+   .show {
+      width: 300px;
+   }
+}
