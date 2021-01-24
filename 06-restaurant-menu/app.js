@@ -45,7 +45,6 @@ const displayCategoryBtns = (data) => {
    // Filter Menu list.
    filterBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
-         console.log(e.currentTarget);
          const category = e.currentTarget.dataset.category;
          const menuCategory = menu.filter(menuItem => {
             // to get the specific category targeted
