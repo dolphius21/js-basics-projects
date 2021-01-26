@@ -1,0 +1,54 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+.preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+   object-fit: cover;
+   background-color: #fff;
+   z-index: -5;
+}
+
+header {
+   min-height: 100vh;
+   position: relative;
+   display: grid;
+   place-items: center;
+}
+
+.video-container {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -2;
+}
+
+h1 {
+   margin: auto;
+   font-size: 5rem;
+   line-height: 8rem;
+   color: #fff;
+   text-align: center;
+}
+
+.switch-btn {
+   justify-self: start;
+   align-self: flex-end;
+   margin-bottom: 3rem;
+   margin-left: 5rem;
+}
